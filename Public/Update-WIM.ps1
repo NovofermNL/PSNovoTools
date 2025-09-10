@@ -10,7 +10,6 @@ function Update-WIM {
         [switch]$SkipCleanup         # sla DISM component cleanup over
     )
 
-    # Dominic-voorkeuren
     [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
     Test-PSN-Admin
 
@@ -207,3 +206,4 @@ function Update-WIM {
     }
 }
 Export-ModuleMember -Function Update-WIM
+
